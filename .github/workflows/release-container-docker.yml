@@ -11,8 +11,8 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v1
       with:  
-#        username: ${{ github.actor }}
-        username: kubernoah
+        username: ${{ github.actor }}
+#        username: kubernoah
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: ghcr.io
         tag_with_ref: true
