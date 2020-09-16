@@ -12,7 +12,7 @@ jobs:
       uses: docker/build-push-action@v1
       with:  
         username: ${{ github.actor }}
-        password: ${{ secrets.TOKEN_FOR_GHCR }}
+        password: ${{ secrets.GITHUB_TOKEN }}
         registry: ghcr.io/kubernoah/yuhu
         tag_with_ref: true
         tag_with_sha: true
